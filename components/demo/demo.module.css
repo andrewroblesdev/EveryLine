@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+.backdrop {
+    background-color: #01162B;
+    color: white;
+    height: 600px;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.small {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.space {
+    height: 70px;
+}
