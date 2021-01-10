@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.tab {
+    height: 34px;
+    padding-top: 6px;
+    margin-top: 2px;
+    background-color:#282A36;
+    color: white;
+    border-radius: 0px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 -1.7px 0 #FF79C6;
+}
+
+.tab p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+}

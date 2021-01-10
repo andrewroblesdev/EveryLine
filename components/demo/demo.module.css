@@ -3,7 +3,6 @@
 .backdrop {
     background-color: #01162B;
     color: white;
-    height: 600px;
 }
 
 .title {
@@ -21,4 +20,15 @@
 
 .space {
     height: 70px;
+}
+
+.editor {
+    max-width: 575px;
+    margin: auto;
+    
+    padding: 10px;
+}
+
+.footer {
+    background-color: #01162B !important;
 }
