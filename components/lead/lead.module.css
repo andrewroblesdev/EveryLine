@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+
+.navbar {
+    background-color: #01162B;
+    color: white;
+    height: 130px;
+}
+
+.link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    font-style: italic;
+}
+
+.slogan {
+    font-family: 'Jura', sans-serif;
+    font-size: 13px;
+    color: #F8E505;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.btnCustom {
+    background-color: #F8E505;
+    width: 175px;
+}

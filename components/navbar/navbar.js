@@ -19,8 +19,6 @@ export default function Navbar() {
                         <div className={`${styles.slogan}`}>Animate your Coding Tutorials</div>
                     </div>
                     <div className={`col-9 mt-5`}>
-                            <div className={`${styles.link} mr-5`}>Sign Up</div>
-                            <div className={`${styles.link} mr-5`}>Log In</div>
                             <div className={`${styles.link} mr-5`}>Try It Out</div>
                             <div className={`${styles.link} mr-5`}>Why EveryLine?</div>   
                     </div>

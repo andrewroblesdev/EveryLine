@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from './header.module.css';
 
+import Lead from '../lead/lead';
+
 export default function Header() {
     return(
         <div className={`${styles.backsplash}`}>
@@ -12,7 +14,8 @@ export default function Header() {
                     <br/>
                         Everything you need, in one streamlined platform.
                     </div>
-                    <button type="button" className={`btn ${styles.btnCustom}`}>Sign up</button>
+                    <Lead />
+                    {/* <button type="button" className={`btn ${styles.btnCustom}`}>Sign up</button> */}
                 </div>
             </div>
         </div>
