@@ -8,19 +8,15 @@ export default function Navbar() {
                 <div className={`row justify-content-between`}>
                     <div className={`col-3 mt-4`}>
                         <div>
-                            <div className={`${styles.left} ml-2 mr-2`}>
+                            <div className={`float-left ml-2 mr-2`}>
                                 <img
                                     src="/logo.png"
-                                    className={`${styles.logo}`}
+                                    className={`${styles.logo} `}
                                 />
                             </div>
                             <div className={`${styles.title} ${styles.left}`}>EveryLine</div>
                         </div>
-                        <div className={`${styles.slogan}`}>Animate your Coding Tutorials</div>
-                    </div>
-                    <div className={`col-9 mt-5`}>
-                            <div className={`${styles.link} mr-5`}>Try It Out</div>
-                            <div className={`${styles.link} mr-5`}>Why EveryLine?</div>   
+                        <div className={`${styles.subtitle}`}>Animate your Coding Tutorials</div>
                     </div>
                 </div>
             </div>

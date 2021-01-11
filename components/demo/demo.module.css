@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
-.backdrop {
-    background-color: #01162B;
+.demo {
+    background-color: #02051E;
     color: white;
 }
 
@@ -25,7 +25,6 @@
 .editor {
     max-width: 575px;
     margin: auto;
-    
     padding: 10px;
 }
 

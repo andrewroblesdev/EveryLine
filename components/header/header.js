@@ -17,7 +17,7 @@ const exampleCode =
 
 export default function Header() {
     return(
-        <div className={`${styles.backsplash}`}>
+        <div className={`${styles.header}`}>
             <div className={`container`}>
                 <div className={`row`}>
                     <div className={`col`}>

@@ -16,8 +16,7 @@ const exampleCode =
 
 export default function Demo() {
     return(
-        <div className={`${styles.backdrop}`}>
-
+        <div className={`${styles.demo}`}>
                 <div className={`${styles.space}`}></div>
 
                 <div className={`text-center ${styles.title}`}>

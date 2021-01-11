@@ -2,29 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
 .navbar {
-    background-color: #01162B;
+    background-color: #02051E;
     color: white;
     height: 130px;
 }
 
-.link {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
 .title {
     font-family: 'Roboto', sans-serif;
+    font-style: italic;
     font-weight: 300;
     font-size: 35px;
-    font-style: italic;
 }
 
-.slogan {
+.subtitle {
     font-family: 'Jura', sans-serif;
     font-size: 13px;
     color: #F8E505;

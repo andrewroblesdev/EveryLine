@@ -5,8 +5,7 @@ import styles from './about.module.css';
 export default function About() {
     return(
         <div className={`container`}>
-            <div className={`${styles.space}`}></div>
-            <div className={`${styles.space}`}></div>
+            <div className={`${styles.border}`}></div>
             <div className={`row justify-content-center`}>
                 <div className={`col text-center`}>
                     <div className={`${styles.title}`}>
@@ -17,7 +16,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className={`${styles.space}`}></div>
+            <div className={`${styles.spacer}`}></div>
             <div className={`row justify-content-center`}>
                 <div className={`col text-center`}>
                     <i className={`fas fa-car-crash fa-2x`}></i>
@@ -52,9 +51,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className={`${styles.space}`}></div>
-            <div className={`${styles.space}`}></div>
-            <div className={`${styles.space}`}></div>
+            <div className={`${styles.border}`}></div>
         </div>
     )
 }

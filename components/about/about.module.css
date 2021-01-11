@@ -2,7 +2,7 @@
 
 .title {
     font-family: 'Roboto', sans-serif;
-    font-size: 45px;
+    font-size: 55px;
     font-weight: 400;
 }
 
@@ -25,10 +25,10 @@
     font-size: 17px;
 }
 
-.icon {
-    size: 60px;
+.border {
+    height: 150px;
 }
 
-.space {
-    height: 50px;
+.spacer {
+    height: 75px;
 }

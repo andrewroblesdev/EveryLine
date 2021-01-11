@@ -15,7 +15,7 @@ import Tab from './tab/tab'
 
 export default function Editor(props) {
     return (
-        <div>
+        <div className={`${styles.editor}`}>
             <Tab />
             <CodeMirror
                 value={props.code}
