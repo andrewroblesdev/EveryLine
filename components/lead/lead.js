@@ -19,17 +19,16 @@ export default function Lead() {
         <Modal show={show} onHide={handleClose}>
 
           <Modal.Header closeButton>
-            <Modal.Title><i>EveryLine</i> is temporarily down</Modal.Title>
+            <Modal.Title>A message from the developer</Modal.Title>
           </Modal.Header>
 
           <Modal.Body>
-            <Form.Label>Sorry! We will send you an email when it's up and running</Form.Label>
-            <Form.Control className="mb-2" type="email" placeholder="Email address" />
+            <p>Hey there!<br/><br/>The core functionality of the platform is still being worked on but will hopefully be able to support user sign ups very soon. Thanks for stopping by!<br/><br/>-Andrew</p>
           </Modal.Body>
         
           <Modal.Footer>
             <Button variant="primary" onClick={handleClose}>
-              Submit
+              Okay
             </Button>
           </Modal.Footer>
 
