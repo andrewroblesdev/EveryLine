@@ -18,7 +18,7 @@ export default function About() {
             </div>
             <div className={`${styles.spacer}`}></div>
             <div className={`row justify-content-center`}>
-                <div className={`col text-center`}>
+                <div className={`col-md-3 text-center mb-5`}>
                     <i className={`fas fa-car-crash fa-2x`}></i>
                     
                     <div className={`${styles.subtitle}`}>
@@ -28,7 +28,7 @@ export default function About() {
                         Syntax errors or typos in code can be overlooked and make the uploaded final cut
                     </div>
                 </div>
-                <div className={`col text-center`}>
+                <div className={`col-md-3 text-center mb-5`}>
                     <div>
                         <i className={`fas fa-hourglass-half fa-2x`}></i>
                     </div>
@@ -39,7 +39,7 @@ export default function About() {
                         Having to do multiple takes or excessive preplanning can be time costly
                     </div>
                 </div>
-                <div className={`col text-center`}>
+                <div className={`col-md-3 text-center`}>
                     <div>
                         <i className={`fas fa-trash-alt fa-2x`}></i>
                     </div>
