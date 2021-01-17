@@ -33,7 +33,7 @@ export default function Header() {
                             <Lead />
                         </div>
                     </div>
-                    <div className={`col`}>
+                    <div className={`${styles.editor} col`}>
                         <Editor code={exampleCode}/>
                     </div>
                 </div>  
