@@ -22,8 +22,8 @@ export default function Header() {
             <div className={`container`}>
                 <div className={`row`}>
                     <div className={`${styles.content} col`}>
-                        <div className={`pt-5`}>
-                            <div className={`${styles.description} mb-3`}>
+                        <div className={`${styles.description} pt-5`}>
+                            <div className={`mb-3`}>
                                 Easily create coding tutorials
                             <br/>
                                 Spend more time coding
