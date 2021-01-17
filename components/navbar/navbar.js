@@ -7,7 +7,7 @@ export default function Navbar() {
             <div className={`container`}>
                 <div className={`row justify-content-between`}>
                     <div className={`col mt-4`}>
-                        <div className={`${styles.title} ${styles.left}`}>EveryLine</div>
+                        <div className={`${styles.title}`}>EveryLine</div>
                     </div>
                 </div>
             </div>
