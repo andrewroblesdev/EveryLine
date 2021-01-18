@@ -21,7 +21,9 @@ export default function Editor(props) {
     })
 
     useEffect(() => {
-        typeChar()
+        if(state.codeToWrite) {
+            typeChar()
+        }
     })
 
     const typeChar = () => {
