@@ -1,11 +1,10 @@
-import Editor from '../components/editor/editor';
-import Controls from '../components/controls/controls';
+import Navbar from '../components/navbar/navbar';
 import Player from '../components/player/player';
 
 export default function Notepad() {
     return(
         <span>
-            <Controls />
+            <Navbar />
             <Player />
         </span>
     )
