@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import {UnControlled as CodeMirror} from 'react-codemirror2'
 import 'codemirror/lib/codemirror.css'
@@ -30,26 +30,55 @@ import styles from './player.module.css'
 export default function Player(props) {
     const [state, setState] = useState({
         'fileType': '',
-        'value': ''
+        'value': '',
+        'codeToWrite': '',
+        'charIndex': 0
     })
+
+    useEffect(() => {
+        if(state.codeToWrite) {
+            typeChar()
+        }
+    })
+
+    const typeChar = () => {
+        if(state.codeToWrite.length > state.charIndex) {
+            setTimeout(updateState, 50)
+        }
+    }
+
+    const updateState = () => {
+        setState({
+            'fileType': state.fileType,
+            'codeToWrite': state.codeToWrite,
+            'value': state.value + state.codeToWrite[state.charIndex],
+            'charIndex': state.charIndex + 1
+        })
+    }
 
     const updateFileTypeState = (newFileType) => {
         setState({
             'fileType': newFileType,
-            'value': state.value
+            'value': state.value,
+            'codeToWrite': state.codeToWrite,
+            'charIndex': state.charIndex
         })
     }
 
     const updateValueState = (value) => {
         setState({
             'fileType': state.fileType,
-            'value': value
+            'value': value,
+            'codeToWrite': state.codeToWrite,
+            'charIndex': state.charIndex
         })
     }
 
     const clearEditor = () => {
         setState({
             'fileType': state.fileType,
+            'codeToWrite': state.value,
+            'charIndex': state.charIndex,
             'value': ''
         })
     }
@@ -76,7 +105,7 @@ export default function Player(props) {
                             readOnly: false
                         }}
                         editorDidMount={editor => {editor.setSize(null, "800");}}
-                        onChange={(editor, data, value) => {updateValueState(editor.value)}}
+                        onChange={(editor, data, value) => {updateValueState(editor.getValue())}}
                     />
                 </div>
             </div>
