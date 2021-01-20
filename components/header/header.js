@@ -24,11 +24,7 @@ export default function Header() {
                     <div className={`${styles.content} col`}>
                         <div className={`${styles.description} pt-5`}>
                             <div className={`mb-3`}>
-                                Easily create coding tutorials
-                            <br/>
-                                Spend more time coding
-                            <br/>
-                                Spend less time filming
+                                Easily create coding videos
                             </div>
                             <Lead />
                         </div>
