@@ -32,7 +32,8 @@ export default function Player(props) {
         'fileType': '',
         'value': '',
         'codeToWrite': '',
-        'charIndex': 0
+        'charIndex': 0,
+        'readOnly': false
     })
 
     useEffect(() => {
@@ -52,7 +53,8 @@ export default function Player(props) {
             'fileType': state.fileType,
             'codeToWrite': state.codeToWrite,
             'value': state.value + state.codeToWrite[state.charIndex],
-            'charIndex': state.charIndex + 1
+            'charIndex': state.charIndex + 1,
+            'readOnly': state.readOnly
         })
     }
 
@@ -61,7 +63,8 @@ export default function Player(props) {
             'fileType': newFileType,
             'value': state.value,
             'codeToWrite': state.codeToWrite,
-            'charIndex': state.charIndex
+            'charIndex': state.charIndex,
+            'readOnly': state.readOnly
         })
     }
 
@@ -70,7 +73,8 @@ export default function Player(props) {
             'fileType': state.fileType,
             'value': value,
             'codeToWrite': state.codeToWrite,
-            'charIndex': state.charIndex
+            'charIndex': state.charIndex,
+            'readOnly': state.readOnly
         })
     }
 
@@ -79,7 +83,8 @@ export default function Player(props) {
             'fileType': state.fileType,
             'codeToWrite': state.value,
             'charIndex': state.charIndex,
-            'value': ''
+            'value': '',
+            'readOnly': true
         })
     }
 
@@ -102,7 +107,7 @@ export default function Player(props) {
                             mode: state.fileType,
                             theme: 'dracula',
                             lineNumbers: true,
-                            readOnly: false
+                            readOnly: state.readOnly
                         }}
                         editorDidMount={editor => {editor.setSize(null, "800");}}
                         onChange={(editor, data, value) => {updateValueState(editor.getValue())}}

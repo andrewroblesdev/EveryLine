@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from './navbar.module.css';
 
-import Link from 'next/Link'
+import Link from 'next/link'
 
 export default function Navbar(props) {
     return(
