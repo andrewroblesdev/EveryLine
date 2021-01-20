@@ -1,9 +1,9 @@
 import styles from './button.module.css'
 
-export default function Button() {
+export default function Button(props) {
     return(
         <div className={`${styles.button}`}>
-            <button type="button" className={`${styles.custom} btn`}>Done</button>
+            <button onClick={props.event} type="button" className={`${styles.custom} btn`}>Done</button>
         </div>
     )
 }

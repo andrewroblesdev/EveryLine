@@ -27,13 +27,13 @@ import Button from './button/button'
 import 'bootstrap/dist/css/bootstrap.css'
 import styles from './player.module.css'
 
-export default function Player() {
-    const [state, setState] = useState({
+export default function Player(props) {
+    const [playerState, setPlayerState] = useState({
         'fileType': ''
     })
 
     const updateFileTypeState = (newFileType) => {
-        setState({
+        setPlayerState({
             'fileType': newFileType
         })
     }
@@ -44,12 +44,12 @@ export default function Player() {
                 <div className={`${styles.editor}`}>
                     <div className={`${styles.navbar}`}>
                         <Tab title='Untitled' updateFileTypeState={updateFileTypeState} />
-                        <Button />
+                        { !props.isPlaying && <Button event={props.toggleIsPlaying}/> }
                     </div>
                     <CodeMirror
                         value={''}
                         options={{
-                            mode: state.fileType,
+                            mode: playerState.fileType,
                             theme: 'dracula',
                             lineNumbers: true,
                             readOnly: false
