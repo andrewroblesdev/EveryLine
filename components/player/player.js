@@ -28,14 +28,35 @@ import 'bootstrap/dist/css/bootstrap.css'
 import styles from './player.module.css'
 
 export default function Player(props) {
-    const [playerState, setPlayerState] = useState({
-        'fileType': ''
+    const [state, setState] = useState({
+        'fileType': '',
+        'value': ''
     })
 
     const updateFileTypeState = (newFileType) => {
-        setPlayerState({
-            'fileType': newFileType
+        setState({
+            'fileType': newFileType,
+            'value': state.value
         })
+    }
+
+    const updateValueState = (value) => {
+        setState({
+            'fileType': state.fileType,
+            'value': value
+        })
+    }
+
+    const clearEditor = () => {
+        setState({
+            'fileType': state.fileType,
+            'value': ''
+        })
+    }
+
+    const playScenario = () => {
+        props.toggleIsPlaying()
+        clearEditor()
     }
 
     return(
@@ -44,17 +65,18 @@ export default function Player(props) {
                 <div className={`${styles.editor}`}>
                     <div className={`${styles.navbar}`}>
                         <Tab title='Untitled' updateFileTypeState={updateFileTypeState} />
-                        { !props.isPlaying && <Button event={props.toggleIsPlaying}/> }
+                        { !props.isPlaying && <Button event={playScenario}/> }
                     </div>
                     <CodeMirror
-                        value={''}
+                        value={state.value}
                         options={{
-                            mode: playerState.fileType,
+                            mode: state.fileType,
                             theme: 'dracula',
                             lineNumbers: true,
                             readOnly: false
                         }}
                         editorDidMount={editor => {editor.setSize(null, "800");}}
+                        onChange={(editor, data, value) => {updateValueState(editor.value)}}
                     />
                 </div>
             </div>
