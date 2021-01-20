@@ -23,3 +23,15 @@
     font-weight: 100;
     font-size: 25px;
 }
+
+@media (max-width: 600px) {
+    .description {
+        text-align: center;
+        font-size: 35px;
+    } 
+
+    .editor {
+        margin-top: 20px;
+        order: -1
+    }
+ }

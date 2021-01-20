@@ -1,3 +1,10 @@
 .editor {
     font-size: 16px;
+    min-width: 450px;
+}
+
+@media (max-width: 600px) {
+    .editor {
+        font-size: 19px;
+    }
 }

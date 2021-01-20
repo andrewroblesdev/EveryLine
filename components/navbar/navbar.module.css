@@ -12,6 +12,8 @@
     font-style: italic;
     font-weight: 300;
     font-size: 35px;
+    text-decoration: none !important;
+    color: white !important;
 }
 
 .subtitle {
@@ -23,6 +25,13 @@
 .logo {
     height: 50px;
     width: auto;
+}
+
+@media (max-width: 600px) {
+    .title {
+        text-align: center;
+        font-size: 60px;
+    }
 }
 
 

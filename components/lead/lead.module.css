@@ -40,3 +40,12 @@
     width: 200px;
     font-size: 17px;
 }
+
+@media (max-width: 600px) {
+    .btnCustom {
+        font-size: 25px;
+        margin-top: 10px;
+        width: 450px;
+        height: 60px;
+    }
+}
