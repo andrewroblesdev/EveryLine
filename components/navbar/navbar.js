@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Navbarlinks from './navbarlinks'
 
 export default function Navbar(props) {
   return(
@@ -13,12 +14,7 @@ export default function Navbar(props) {
         </div>
         
         <nav className="sm:col-end-5 sm:col-span-2 flex self-center">
-          <ul className="flex w-full sm:justify-end text-white items-baseline">
-            <li className="border-solid border-everyYellow border py-1 px-3 rounded-lg">Why Everyline?</li>
-            <li className="px-3">Try it out</li>
-            <li className="px-3">Log in</li>
-            <li className="px-3">Sign up</li>
-          </ul>
+          <Navbarlinks />
         </nav>
       </div>
     </header>

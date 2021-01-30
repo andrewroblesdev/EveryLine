@@ -16,7 +16,7 @@ function fib(n) {
 export default function Header() {
   return(
     <div className="bg-everyBlue text-white pt-9">
-      <div className="container mx-auto flex flex-col sm:flex-row sm:px-9">
+      <div className="container mx-auto flex flex-col pb-6 sm:flex-row sm:px-9">
         <div id="lead-text" className="px-3 w-full order-last mt-8 sm:mt-0 sm:order-first">
           <h2>Create coding tutorials quickly and effortlessly.</h2>
           <p className="pb-6">Everything you need in one streamlined platform.</p>

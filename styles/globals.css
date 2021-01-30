@@ -6,21 +6,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (min-width: 640px) {
-
-  #white-curve {
-    background-color: white;
-    margin-top: -75px;
-    height: 100px;
-    width: 100%;
-    border-top-left-radius: 60%;
-    border-top-right-radius: 60%;
-  }
-}
-
 .react-codemirror2 .CodeMirror {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
-  box-shadow: 10px 10px 5px black;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.5);
 }
