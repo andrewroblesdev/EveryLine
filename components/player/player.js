@@ -84,7 +84,7 @@ export default function Player(props) {
             'codeToWrite': state.value,
             'charIndex': state.charIndex,
             'value': '',
-            'readOnly': true
+            'readOnly': 'nocursor'
         })
     }
 
