@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import styles from './landing.module.css';
 
 import Editor from '../editor/editor';
+import About from '../about/about';
 
 const exampleCode = 
 `// Fibonacci
@@ -31,9 +32,7 @@ export default function Landing() {
               </div>
               <a className={`btn btn-lg btn-block ${ styles.button}`}>Get started</a>
             </div>
-        <div className={`${ styles.about }`}>
-          
-        </div>
+        <About/>
       </div>
 
         
