@@ -4,6 +4,11 @@
 .landing {
     background-color: #02051E;
     color: white;
+    margin-bottom: 75px;
+}
+
+.header {
+    margin-bottom: 75px;
 }
 
 .title {
@@ -19,8 +24,8 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 37px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .button {
@@ -31,6 +36,10 @@
     color: white;
     padding-top: 13px;
     padding-bottom: 13px;
+}
+
+.about {
+    height: 100px;
 }
 
 @media (max-width: 600px) {

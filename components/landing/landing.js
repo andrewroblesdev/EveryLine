@@ -17,9 +17,9 @@ function fib(n) {
 
 export default function Landing() {
     return(
-        <div className={`${ styles.landing }`}>
-            <title>EveryLine</title>
-            <div className={`container`}>
+      <div>
+        <title>EveryLine</title>
+            <div className={`${ styles.landing } container pb-5`}>
               <div className={`${ styles.title}`}>
                   <a>EveryLine</a>
               </div>
@@ -31,7 +31,11 @@ export default function Landing() {
               </div>
               <a className={`btn btn-lg btn-block ${ styles.button}`}>Get started</a>
             </div>
+        <div className={`${ styles.about }`}>
+          
         </div>
+      </div>
+
         
     )
 }
