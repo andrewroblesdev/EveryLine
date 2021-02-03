@@ -20,21 +20,27 @@ export default function Landing() {
     return(
       <div>
         <title>EveryLine</title>
-            <div className={`${ styles.landing } container pb-5`}>
-              <div className={`${ styles.title}`}>
-                  <a>EveryLine</a>
+            <div className={`${ styles.landing } `}>
+              <div className={`container pb-5`}>
+                <div className={`${ styles.title}`}>
+                    <a>EveryLine</a>
+                </div>
+                <div className={`row`}>
+                  <div className={`col`}>
+                    <div className={`${ styles.description }`}>
+                      Make coding TikToks
+                    </div>
+                    <a className={`btn btn-lg btn-block ${ styles.button}`}>Get started</a>
+                  </div>
+                  <div className={`col`}>
+                    <div className={`${ styles.editor }`}>
+                      <Editor code={exampleCode} />
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className={`${ styles.editor }`}>
-                  <Editor code={exampleCode} />
-              </div>
-              <div className={`${ styles.description }`}>
-                  Make coding TikToks
-              </div>
-              <a className={`btn btn-lg btn-block ${ styles.button}`}>Get started</a>
             </div>
-        <About/>
+        <About className={`${ styles.about }`}/>
       </div>
-
-        
     )
 }

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
+
 .landing {
     background-color: #02051E;
     color: white;
@@ -17,12 +18,14 @@
     font-size: 35px;
     text-decoration: none !important;
     color: white !important;
+    padding-top: 24px;
 }
 
 .description {
+    padding-top: 80px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 37px;
+    font-weight: 100;
+    font-size: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -31,13 +34,21 @@
     font-family: 'Roboto', sans-serif;
     background-color: #FF79C6;
     font-weight: 375;
-    font-size: 27px;
+    font-size: 20px;
     color: white;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    width: 200px;
+    height: 50px;
+    
+}
+
+.editor {
+    max-width: 500px;
 }
 
 .about {
+    padding-top: 300px;
     height: 100px;
 }
 
