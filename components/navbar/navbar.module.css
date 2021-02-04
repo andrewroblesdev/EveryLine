@@ -14,6 +14,7 @@
     font-size: 35px;
     text-decoration: none !important;
     color: white !important;
+    padding-top: 24px;
 }
 
 .subtitle {
@@ -27,10 +28,20 @@
     width: auto;
 }
 
+.link {
+    padding-left: 8.5px;
+}
+
 @media (max-width: 600px) {
     .title {
         text-align: center;
-        font-size: 60px;
+        font-size: 45px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .link {
+        padding-left: 0
     }
 }
 

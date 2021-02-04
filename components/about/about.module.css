@@ -4,6 +4,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 55px;
     font-weight: 400;
+    padding-top: 50px;
 }
 
 .subtitle {
@@ -26,9 +27,15 @@
 }
 
 .border {
-    height: 150px;
+    height: 25px;
 }
 
 .spacer {
     height: 75px;
+}   
+
+@media(max-width: 600px) {
+    .title {
+        font-size: 50px;
+    }
 }

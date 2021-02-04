@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+
+
+.landing {
+    background-color: #02051E;
+    color: white;
+}
+
+.header {
+    margin-bottom: 75px;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 35px;
+    text-decoration: none !important;
+    color: white !important;
+    padding-top: 24px;
+}
+
+.description {
+    padding-top: 80px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FF79C6;
+    font-weight: 375;
+    font-size: 19px;
+    color: white;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    max-width: 225px;
+    max-height: 45px;
+}
+
+.editor {
+    max-width: 500px;
+    min-width: 350px;
+}
+
+.about {
+    padding-top: 300px;
+    height: 100px;
+}
+
+@media (max-width: 600px) {
+    .title {
+        text-align: center;
+        font-size: 45px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .description {
+        padding-top: 0px;
+        font-size: 37px;
+        font-weight: 300;
+    }
+
+    .button {
+        font-size: 27;
+        max-width: none;
+        max-height: none;
+        font-size: 27px;
+    }
+
+    .editor {
+        order: -1;
+    }
+}

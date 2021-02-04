@@ -49,7 +49,7 @@ export default function Editor(props) {
                     mode: 'javascript',
                     theme: 'dracula',
                     lineNumbers: true,
-                    readOnly: true
+                    readOnly: 'nocursor'
                 }}
             />
         </div>
