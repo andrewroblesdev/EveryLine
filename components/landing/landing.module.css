@@ -36,11 +36,10 @@
     font-weight: 375;
     font-size: 19px;
     color: white;
-    /* margin-top: 13px; */
-    /* margin-bottom: 13px; */
-    width: 225px;
-    height: 45px;
-    
+    margin-top: 13px;
+    margin-bottom: 13px;
+    max-width: 225px;
+    max-height: 45px;
 }
 
 .editor {
@@ -58,5 +57,22 @@
         font-size: 45px;
         padding-top: 10px;
         padding-bottom: 30px;
+    }
+
+    .description {
+        padding-top: 0px;
+        font-size: 37px;
+        font-weight: 300;
+    }
+
+    .button {
+        font-size: 27;
+        max-width: none;
+        max-height: none;
+        font-size: 27px;
+    }
+
+    .editor {
+        order: -1;
     }
 }

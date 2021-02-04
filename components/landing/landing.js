@@ -32,10 +32,8 @@ export default function Landing() {
                     </div>
                     <a className={`btn btn-lg btn-block ${ styles.button}`}>Get started</a>
                   </div>
-                  <div className={`col`}>
-                    <div className={`${ styles.editor }`}>
+                  <div className={`${styles.editor} col`}>
                       <Editor code={exampleCode} />
-                    </div>
                   </div>
                 </div>
               </div>
