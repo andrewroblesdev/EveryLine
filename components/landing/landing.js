@@ -1,8 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import styles from './landing.module.css';
+import 'bootstrap/dist/css/bootstrap.css'
+import styles from './landing.module.css'
 
-import Editor from '../editor/editor';
-import About from '../about/about';
+import Editor from '../editor/editor'
+import About from '../about/about'
+
+import Link from 'next/link'
 
 const exampleCode = 
 `// Fibonacci
@@ -30,7 +32,9 @@ export default function Landing() {
                     <div className={`${ styles.description }`}>
                       Make coding TikToks
                     </div>
-                    <a className={`btn btn-lg btn-block ${ styles.button}`}>Get started</a>
+                    <Link href="/demo">
+                      <a className={`btn btn-lg btn-block ${ styles.button}`}>Get started</a>
+                    </Link>
                   </div>
                   <div className={`${styles.editor} col`}>
                       <Editor code={exampleCode} />
