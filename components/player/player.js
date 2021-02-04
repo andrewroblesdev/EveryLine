@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-import {UnControlled as CodeMirror} from 'react-codemirror2'
+import {Controlled as CodeMirror} from 'react-codemirror2'
 import 'codemirror/lib/codemirror.css'
 import 'codemirror/theme/dracula.css'
 
@@ -110,7 +110,11 @@ export default function Player(props) {
                             readOnly: state.readOnly
                         }}
                         editorDidMount={editor => {editor.setSize(null, "800");}}
-                        onChange={(editor, data, value) => {updateValueState(editor.getValue())}}
+                        onBeforeChange={(editor, data, value) => {
+                           updateValueState(value)
+                        }}
+                        onChange={(editor, data, value) => {
+                        }}
                     />
                 </div>
             </div>
