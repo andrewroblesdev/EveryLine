@@ -1,3 +1,8 @@
+import {useState} from 'react';
+
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
 import 'bootstrap/dist/css/bootstrap.css'
 import styles from './landing.module.css'
 
@@ -19,6 +24,12 @@ function fib(n) {
 }`  
 
 export default function Landing() {
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return(
       <div>
         <title>EveryLine</title>
@@ -30,11 +41,29 @@ export default function Landing() {
                 <div className={`row`}>
                   <div className={`col`}>
                     <div className={`${ styles.description }`}>
-                      Make coding TikToks
+                     Share code with friends 
                     </div>
-                    <Link href="/demo">
-                      <a className={`btn btn-lg btn-block ${ styles.button}`}>Get started</a>
-                    </Link>
+                      <>
+                        <button type="button" className={`btn btn-lg btn-block ${styles.button}`} onClick={handleShow}>Get started</button>
+
+                        <Modal show={show} onHide={handleClose}>
+
+                          <Modal.Header closeButton>
+                            <Modal.Title>Sign in to share & explore</Modal.Title>
+                          </Modal.Header>
+
+                          <Modal.Body>
+                            <p>Sign in to EveryLine to start sharing code and viewing what others have shared.</p>
+                          </Modal.Body>
+
+                          <Modal.Footer>
+                            <Button variant="primary" onClick={handleClose}>
+                              Sign in using Google account 
+                            </Button>
+                          </Modal.Footer>
+
+                        </Modal>
+                      </>
                   </div>
                   <div className={`${styles.editor} col`}>
                       <Editor code={exampleCode} />
@@ -42,7 +71,6 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-        <About className={`${ styles.about }`}/>
       </div>
     )
 }

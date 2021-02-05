@@ -5,6 +5,7 @@
 .landing {
     background-color: #02051E;
     color: white;
+    height: 100vh;
 }
 
 .header {
@@ -62,7 +63,7 @@
 
     .description {
         padding-top: 0px;
-        font-size: 37px;
+        font-size: 33px;
         font-weight: 300;
     }
 
