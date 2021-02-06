@@ -20,10 +20,13 @@ export default function Feed() {
       <div>
         <title>EveryLine</title>
             <div className={`${ styles.landing } `}>
+                <nav class="navbar navbar-dark ${ styles.navbar }">
+                    <div className={`${ styles.title}`}>EveryLine</div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
               <div className={`container pb-5`}>
-                <div className={`${ styles.title}`}>
-                    <a>EveryLine</a>
-                </div>
                 <div className={`row`}>
                   <Snippet filename={`Tab.js`} code={exampleCode}/>
                   <Snippet filename={`Tab.js`} code={exampleCode}/>
