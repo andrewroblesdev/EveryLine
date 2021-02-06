@@ -42,7 +42,9 @@ export default function Editor(props) {
 
     return (
         <div className={`${styles.editor}`}>
-            <Tab />
+            <div className={`${styles.navbar}`}>
+                <Tab />
+            </div>
             <CodeMirror
                 value={state.writtenCode}
                 options={{
