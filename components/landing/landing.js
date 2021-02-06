@@ -66,7 +66,7 @@ export default function Landing() {
                       </>
                   </div>
                   <div className={`${styles.editor} col`}>
-                      <Editor code={exampleCode} />
+                      <Editor filename={`Tab.js`} code={exampleCode} />
                   </div>
                 </div>
               </div>
