@@ -12,7 +12,7 @@ export default function About() {
                         Why EveryLine?
                     </div>
                     <div className={`${styles.medium}`}>
-                        Making tutorials by manually writing code while screen recording is:
+                        Making tutorials by writing code then screen recording results in:
                     </div>
                 </div>
             </div>
@@ -22,10 +22,10 @@ export default function About() {
                     <i className={`fas fa-car-crash fa-2x`}></i>
                     
                     <div className={`${styles.subtitle}`}>
-                        Error Prone
+                        Less Errors
                     </div>
                     <div className={`${styles.small}`}>
-                        Syntax errors or typos in code can be overlooked and make the uploaded final cut
+                        Syntax errors or typos in code are less likely to be overlooked and show up in the final cut
                     </div>
                 </div>
                 <div className={`col-md-3 text-center mb-5`}>
@@ -33,21 +33,21 @@ export default function About() {
                         <i className={`fas fa-hourglass-half fa-2x`}></i>
                     </div>
                     <div className={`${styles.subtitle}`}>
-                        Time consuming
+                        Saved Time
                     </div>
                     <div className={`${styles.small}`}>
-                        Having to do multiple takes or excessive preplanning can be time costly
+                        No longer having to do multiple takes or excessive preplanning that can be time costly
                     </div>
                 </div>
                 <div className={`col-md-3 text-center`}>
                     <div>
-                        <i className={`fas fa-trash-alt fa-2x`}></i>
+                        <i className={`fas fa-recycle fa-2x`}></i>
                     </div>
                     <div className={`${styles.subtitle}`}>
-                        Not reusable
+                        Reusable Code
                     </div>
                     <div className={`${styles.small}`}>
-                        Video footage of code cannot be altered to be used for other tutorials
+                        Video footage of code can be altered to be used for other tutorials
                     </div>
                 </div>
             </div>
