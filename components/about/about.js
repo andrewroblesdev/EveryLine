@@ -47,7 +47,7 @@ export default function About() {
                         Reusable Code
                     </div>
                     <div className={`${styles.small}`}>
-                        Video footage of code can be altered to be used for other tutorials
+                        Video footage of code can be reused and modified to be used for similar tutorials
                     </div>
                 </div>
             </div>
