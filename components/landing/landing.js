@@ -30,7 +30,7 @@ export default function Landing() {
                 <div className={`row`}>
                   <div className={`col`}>
                     <div className={`${ styles.description }`}>
-                      Make coding videos 
+                      Make coding videos
                     </div>
                     <Link href="/demo">
                       <a className={`btn btn-lg btn-block ${ styles.button}`}>Get started</a>
