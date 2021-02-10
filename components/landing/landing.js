@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import 'bootstrap/dist/css/bootstrap.css'
 import styles from './landing.module.css'
 
@@ -5,6 +7,7 @@ import Editor from '../editor/editor'
 import About from '../about/about'
 
 import Link from 'next/link'
+import Router from 'next/link'
 
 // Firebase
 import firebase from 'firebase/app'
@@ -39,6 +42,44 @@ if (!firebase.apps.length) {
 var provider = new firebase.auth.GoogleAuthProvider();
 
 export default function Landing() {
+ 
+  const [state, setState] = useState({
+    isLoggedIn: false
+  })
+
+  // See if user was previously signed in
+  firebase.auth()
+  .getRedirectResult()
+  .then((result) => {
+    if (result.credential) {
+      /** @type {firebase.auth.OAuthCredential} */
+      var credential = result.credential;
+
+      // This gives you a Google Access Token. You can use it to access the Google API.
+      var token = credential.accessToken;
+      // ...
+    }
+    // The signed-in user info.
+    var user = result.user;
+
+    if(result) {
+      // Redirect to signed in interface
+      Router.push('/demo')
+      
+    }
+  }).catch((error) => {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+
+
+
   return(
     <div>
       <title>EveryLine</title>
