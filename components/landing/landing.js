@@ -39,34 +39,35 @@ if (!firebase.apps.length) {
 var provider = new firebase.auth.GoogleAuthProvider();
 
 export default function Landing() {
-    return(
-      <div>
-        <title>EveryLine</title>
-            <div className={`${ styles.landing } `}>
-              <div className={`container pb-5`}>
-                <div className={`${ styles.title}`}>
-                    <a>EveryLine</a>
+  return(
+    <div>
+      <title>EveryLine</title>
+          <div className={`${ styles.landing } `}>
+            <div className={`container pb-5`}>
+              <div className={`${ styles.title}`}>
+                  <a>EveryLine</a>
+              </div>
+              <div className={`row`}>
+                <div className={`col`}>
+                  <div className={`${ styles.description }`}>
+                    Make coding videos 
+                  </div>
+                  
+                    <button className={`btn btn-lg btn-block ${ styles.button}`} onClick={signIn}>Get started</button>
+                  
                 </div>
-                <div className={`row`}>
-                  <div className={`col`}>
-                    <div className={`${ styles.description }`}>
-                      Make coding videos 
-                    </div>
-                    
-                      <button className={`btn btn-lg btn-block ${ styles.button}`} onClick={signIn}>Get started</button>
-                    
-                  </div>
-                  <div className={`${styles.editor} col`}>
-                      <Editor code={exampleCode} />
-                  </div>
+                <div className={`${styles.editor} col`}>
+                    <Editor code={exampleCode} />
                 </div>
               </div>
             </div>
-        <About className={`${ styles.about }`}/>
-      </div>
-    )
+          </div>
+      <About className={`${ styles.about }`}/>
+    </div>
+  )
 }
 
 function signIn() {
   firebase.auth().signInWithRedirect(provider)
 }
+
