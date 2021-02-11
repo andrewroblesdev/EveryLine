@@ -8,6 +8,7 @@ import About from '../about/about'
 
 import Link from 'next/link'
 import Router from 'next/link'
+import { useRouter } from 'next/router'
 
 // Firebase
 import firebase from 'firebase/app'
@@ -47,6 +48,8 @@ export default function Landing() {
     isLoggedIn: false
   })
 
+  const router = useRouter()
+
   // See if user was previously signed in
   firebase.auth()
   .getRedirectResult()
@@ -58,13 +61,15 @@ export default function Landing() {
       // This gives you a Google Access Token. You can use it to access the Google API.
       var token = credential.accessToken;
       // ...
+
+      router.push('/demo')
     }
     // The signed-in user info.
     var user = result.user;
 
-    if(result) {
+    if(user) {
       // Redirect to signed in interface
-      Router.push('/demo')
+      router.push('/demo')
       
     }
   }).catch((error) => {
