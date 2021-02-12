@@ -29,7 +29,10 @@
 }
 
 .link {
+    font-family: 'Roboto', sans-serif;
     padding-left: 8.5px;
+    font-size: 18px;
+    padding-top: 7px;
 }
 
 @media (max-width: 600px) {
