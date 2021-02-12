@@ -1,16 +1,22 @@
-import Navbar from '../components/navbar/navbar';
-import Header from '../components/header/header';
-import About from '../components/about/about';   
-import Landing from '../components/landing/landing';      
+import Switch from 'react-bootstrap/esm/Switch';
+import Landing from '../components/landing/landing';     
+import ProtectedRoute from '../components/pathing/protectedRoute'
 
 export default function Home() {
   return (
-    <div>
-      <Landing />
-      {/* <title>EveryLine</title> */}
-      {/* <Navbar /> */}
-      {/* <Header /> */}
-      {/* <About /> */}
-    </div>
+    <Switch>
+      <Route exact path="Login">
+        <div id="firebaseui-auth-container">Login</div>
+      </Route>
+
+      <ProtectedRoute redirectTo="/Login" path="/Home">
+        <div>Home</div>
+      </ProtectedRoute>
+
+      <Route exact path="/">
+        <div>Root</div>
+      </Route>
+
+    </Switch>
   )
 }
