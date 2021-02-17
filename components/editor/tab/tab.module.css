@@ -14,6 +14,7 @@
 
 .tab p {
     font-family: 'Roboto Mono', monospace;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 15px;
 }
