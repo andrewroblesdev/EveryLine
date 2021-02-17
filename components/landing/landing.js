@@ -7,16 +7,18 @@ import About from '../about/about'
 import Link from 'next/link'
 
 const exampleCode = 
-`// Fibonacci
-function fib(n) {
-  if (n === 2) {
-    return 1;
-  } else if (n === 1) {
-    return 0;
-  } else {
-    return fib(n-1) + fib(n-2);
-  }
-}`  
+`# Get 150 day historical data 
+data = data['historical'][-150]
+
+# Create dataframe from price data
+prices = pd.DataFrame.from_dict(data)
+prices = prices.set_index('data')
+
+# Calculate 20 day moving average
+close = prices['close']
+rolling = close.rolling(window=20)
+prices['MA20'] = close.mean()
+`  
 
 export default function Landing() {
     return(

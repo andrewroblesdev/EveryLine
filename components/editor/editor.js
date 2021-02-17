@@ -9,6 +9,7 @@ import 'codemirror/theme/dracula.css'
 
 if (typeof navigator !== 'undefined') {
     require('codemirror/mode/javascript/javascript')
+    require('codemirror/mode/python/python')
 }
 
 import Tab from './tab/tab'
@@ -44,11 +45,11 @@ export default function Editor(props) {
         <div className={`${styles.editor}`}>
             <Tab />
             <CodeMirror
-                value={state.writtenCode}
+                value={props.code}
                 options={{
-                    mode: 'javascript',
+                    mode: 'python',
                     theme: 'dracula',
-                    lineNumbers: true,
+                    lineNumbers: false,
                     readOnly: 'nocursor'
                 }}
             />
