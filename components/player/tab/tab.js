@@ -18,7 +18,7 @@ export default function Tab(props) {
 
     return(
         <div className={`${styles.tab}`}>
-            <input className={`form-control ml-4`} placeholder="Untitled" onBlur={e => updateFileExtensionState(e.target.value)}></input>
+            <input className={`form-control`} placeholder={props.title} onBlur={e => updateFileExtensionState(e.target.value)}></input>
         </div>
     )
 }

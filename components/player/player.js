@@ -89,8 +89,7 @@ export default function Player(props) {
     }
 
     const playScenario = () => {
-        props.toggleIsPlaying()
-        clearEditor()
+        alert('More content coming soon.')
     }
 
     return(
@@ -98,15 +97,15 @@ export default function Player(props) {
             <div className={`container`}>
                 <div className={`${styles.editor}`}>
                     <div className={`${styles.navbar}`}>
-                        <Tab title='Untitled' updateFileTypeState={updateFileTypeState} />
+                        <Tab title={props.title} updateFileTypeState={updateFileTypeState} />
                         { !props.isPlaying && <Button event={playScenario}/> }
                     </div>
                     <CodeMirror
-                        value={state.value}
+                        value={props.code}
                         options={{
-                            mode: state.fileType,
+                            mode: 'python',
                             theme: 'dracula',
-                            lineNumbers: true,
+                            lineNumbers: false,
                             readOnly: state.readOnly
                         }}
                         editorDidMount={editor => {editor.setSize(null, "800");}}
