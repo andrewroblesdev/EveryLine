@@ -1,94 +1,23 @@
-import { useState, useEffect } from 'react'
-
+// Codemirror
 import {Controlled as CodeMirror} from 'react-codemirror2'
 import 'codemirror/lib/codemirror.css'
 import 'codemirror/theme/dracula.css'
 
 if (typeof navigator !== 'undefined') {
-    require('codemirror/mode/javascript/javascript')
     require('codemirror/mode/python/python')
-    require('codemirror/mode/shell/shell')
-    require('codemirror/mode/css/css')
-    require('codemirror/mode/dockerfile/dockerfile')
-    require('codemirror/mode/go/go')
-    require('codemirror/mode/php/php')
-    require('codemirror/mode/r/r')
-    require('codemirror/mode/ruby/ruby')
-    require('codemirror/mode/scheme/scheme')
-    require('codemirror/mode/sql/sql')
-    require('codemirror/mode/swift/swift')
-    require('codemirror/mode/vb/vb')
-    require('codemirror/mode/xml/xml')
 }
 
+// Components
 import Tab from './tab/tab'
 import Button from './button/button'
 
+// Styles
 import 'bootstrap/dist/css/bootstrap.css'
 import styles from './player.module.css'
 
 export default function Player(props) {
-    const [state, setState] = useState({
-        'fileType': '',
-        'value': '',
-        'codeToWrite': '',
-        'charIndex': 0,
-        'readOnly': false
-    })
 
-    useEffect(() => {
-        if(state.codeToWrite) {
-            typeChar()
-        }
-    })
-
-    const typeChar = () => {
-        if(state.codeToWrite.length > state.charIndex) {
-            setTimeout(updateState, 50)
-        }
-    }
-
-    const updateState = () => {
-        setState({
-            'fileType': state.fileType,
-            'codeToWrite': state.codeToWrite,
-            'value': state.value + state.codeToWrite[state.charIndex],
-            'charIndex': state.charIndex + 1,
-            'readOnly': state.readOnly
-        })
-    }
-
-    const updateFileTypeState = (newFileType) => {
-        setState({
-            'fileType': newFileType,
-            'value': state.value,
-            'codeToWrite': state.codeToWrite,
-            'charIndex': state.charIndex,
-            'readOnly': state.readOnly
-        })
-    }
-
-    const updateValueState = (value) => {
-        setState({
-            'fileType': state.fileType,
-            'value': value,
-            'codeToWrite': state.codeToWrite,
-            'charIndex': state.charIndex,
-            'readOnly': state.readOnly
-        })
-    }
-
-    const clearEditor = () => {
-        setState({
-            'fileType': state.fileType,
-            'codeToWrite': state.value,
-            'charIndex': state.charIndex,
-            'value': '',
-            'readOnly': 'nocursor'
-        })
-    }
-
-    const playScenario = () => {
+    const promptUserEndOfContent = () => {
         alert('More content coming soon.')
     }
 
@@ -97,8 +26,8 @@ export default function Player(props) {
             <div className={`container`}>
                 <div className={`${styles.editor}`}>
                     <div className={`${styles.navbar}`}>
-                        <Tab title={props.title} updateFileTypeState={updateFileTypeState} />
-                        { !props.isPlaying && <Button event={playScenario}/> }
+                        <Tab title={props.title}/>
+                        { !props.isPlaying && <Button event={promptUserEndOfContent}/> }
                     </div>
                     <CodeMirror
                         value={props.code}
@@ -106,7 +35,7 @@ export default function Player(props) {
                             mode: 'python',
                             theme: 'dracula',
                             lineNumbers: false,
-                            readOnly: state.readOnly
+                            readOnly: true 
                         }}
                         editorDidMount={editor => {editor.setSize(null, "800");}}
                         onBeforeChange={(editor, data, value) => {
