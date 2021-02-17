@@ -12,42 +12,42 @@ export default function About() {
                         Why EveryLine?
                     </div>
                     <div className={`${styles.medium}`}>
-                        Making tutorials by manually writing code while screen recording is:
+                       Learning how to build a trading bot will equip you with these valuable skills: 
                     </div>
                 </div>
             </div>
             <div className={`${styles.spacer}`}></div>
             <div className={`row justify-content-center`}>
                 <div className={`col-md-3 text-center mb-5`}>
-                    <i className={`fas fa-car-crash fa-2x`}></i>
+                    <i className={`fab fa-python fa-3x`}></i>
                     
                     <div className={`${styles.subtitle}`}>
-                        Error Prone
+                        Learn Python
                     </div>
                     <div className={`${styles.small}`}>
-                        Syntax errors or typos in code can be overlooked and make the uploaded final cut
+                       Arguably one of the most powerful languages you can learn 
                     </div>
                 </div>
                 <div className={`col-md-3 text-center mb-5`}>
                     <div>
-                        <i className={`fas fa-hourglass-half fa-2x`}></i>
+                        <i className={`fas fa-money-bill-wave fa-3x`}></i>
                     </div>
                     <div className={`${styles.subtitle}`}>
-                        Time consuming
+                        Trade stocks 
                     </div>
                     <div className={`${styles.small}`}>
-                        Having to do multiple takes or excessive preplanning can be time costly
+                        An essential skill to building wealth is learning how to invest your money 
                     </div>
                 </div>
                 <div className={`col-md-3 text-center`}>
                     <div>
-                        <i className={`fas fa-trash-alt fa-2x`}></i>
+                        <i className={`fas fa-chart-line fa-3x`}></i>
                     </div>
                     <div className={`${styles.subtitle}`}>
-                        Not reusable
+                        Find trends 
                     </div>
                     <div className={`${styles.small}`}>
-                        Video footage of code cannot be altered to be used for other tutorials
+                        Use the Pandas and Matplotlib libraries to see into and predict the future 
                     </div>
                 </div>
             </div>

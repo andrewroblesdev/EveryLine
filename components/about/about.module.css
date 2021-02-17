@@ -31,11 +31,15 @@
 }
 
 .spacer {
-    height: 75px;
+    height: 65px;
 }   
 
 @media(max-width: 600px) {
     .title {
         font-size: 50px;
+    }
+
+    .small {
+        font-size: 20px;
     }
 }
