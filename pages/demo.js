@@ -15,8 +15,7 @@ prices = prices.set_index('data')
 # Calculate 20 day moving average
 close = prices['close']
 rolling = close.rolling(window=20)
-prices['MA20'] = close.mean()
-`  
+prices['MA20'] = close.mean()`  
 
 export default function Demo() {
     const [state, setState] = useState({

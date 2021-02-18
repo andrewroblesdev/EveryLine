@@ -49,7 +49,7 @@ export default function Editor(props) {
                 options={{
                     mode: 'python',
                     theme: 'dracula',
-                    lineNumbers: false,
+                    lineNumbers: true,
                     readOnly: 'nocursor'
                 }}
             />

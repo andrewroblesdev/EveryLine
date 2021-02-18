@@ -34,7 +34,7 @@ export default function Player(props) {
                         options={{
                             mode: 'python',
                             theme: 'dracula',
-                            lineNumbers: false,
+                            lineNumbers: true,
                             readOnly: true 
                         }}
                         editorDidMount={editor => {editor.setSize(null, "800");}}
