@@ -18,7 +18,11 @@ import styles from './player.module.css'
 export default function Player(props) {
 
     const promptUserEndOfContent = () => {
-        alert('More content coming soon.')
+        alert("You've reached the end.")
+    }
+
+    const promptUserBeginningOfContent = () => {
+        alert('Already at the beginning.')
     }
 
     return(
@@ -26,8 +30,8 @@ export default function Player(props) {
             <div className={`container`}>
                 <div className={`${styles.editor}`}>
                     <div className={`${styles.navbar}`}>
-                        <Tab title={props.title}/>
-                        { !props.isPlaying && <Button event={promptUserEndOfContent}/> }
+                        <Tab event={promptUserBeginningOfContent}/>
+                        <Button event={promptUserEndOfContent}/>
                     </div>
                     <CodeMirror
                         value={props.code}

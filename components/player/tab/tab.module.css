@@ -1,22 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .tab {
-    height: 40px;
-    padding-top: 6px;
-    margin-top: 2px;
-    background-color:#282A36;
+    background-color:#050A35;
     color: white;
     border-radius: 0px;
-    cursor: pointer;
     display: inline-block;
-    box-shadow: 0 -1.7px 0 #FF79C6;
 }
 
-.tab input{
-    font-family: 'Roboto', sans-serif;
-    background-color: #282A36;
-    width: 140px;
-    border: none;
-    height: 40px;
-    padding-bottom: 15px;
+.custom {
+    border-radius: 0px;
+    height: 42px;
+    width: 125px;
+    background-color: #050A35;
+    color: white;
+    font-size:18px;
 }
