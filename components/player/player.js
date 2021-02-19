@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 // Codemirror
 import {Controlled as CodeMirror} from 'react-codemirror2'
 import 'codemirror/lib/codemirror.css'
@@ -16,6 +18,31 @@ import 'bootstrap/dist/css/bootstrap.css'
 import styles from './player.module.css'
 
 export default function Player(props) {
+    const [postIndex, setPostIndex] = useState(0)
+
+    const incrementPostIndex = () => {
+        setPostIndex(postIndex + 1)
+    }
+
+    const decrementPostIndex = () => {
+        setPostIndex(postIndex - 1)
+    }
+
+    const handleNextButtonClick = () => {
+        if (postIndex < props.posts.length - 1) {
+            incrementPostIndex()
+        } else {
+            promptUserEndOfContent()
+        }
+    } 
+
+    const handleBackButtonClick = () => {
+        if (postIndex > 0) {
+            decrementPostIndex()
+        } else {
+            promptUserBeginningOfContent()
+        }
+    }
 
     const promptUserEndOfContent = () => {
         alert("You've reached the end.")
@@ -30,11 +57,11 @@ export default function Player(props) {
             <div className={`container`}>
                 <div className={`${styles.editor}`}>
                     <div className={`${styles.navbar}`}>
-                        <Tab event={promptUserBeginningOfContent}/>
-                        <Button event={promptUserEndOfContent}/>
+                        <Tab event={handleBackButtonClick}/>
+                        <Button event={handleNextButtonClick}/>
                     </div>
                     <CodeMirror
-                        value={props.code}
+                        value={props.posts[postIndex]}
                         options={{
                             mode: 'python',
                             theme: 'dracula',

@@ -8,7 +8,7 @@ export default function Navbar(props) {
         <div className={`${styles.navbar}`}>
             <div className={`container pb-5`}>
                 <div className={`${ styles.title } ${ styles.link }`}>
-                    { !props.isPlaying && <Link href="/"><a className={`${styles.title}`}>EveryLine</a></Link> }
+                    <Link href="/"><a className={`${styles.title}`}>EveryLine</a></Link>
                 </div>
             </div>
         </div>
