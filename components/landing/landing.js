@@ -15,23 +15,21 @@ export default function Landing() {
                 <div className={`${ styles.title}`}>
                     <a>EveryLine</a>
                 </div>
-                <div className={`row`}>
-                  <div className={`col`}>
                     <div className={`${ styles.description }`}>
                      Tech TikTok Workshop 
                     </div>
                     <div className={`${ styles.text }`}>
                       Get feedback on your TikTok videos from content creators in tech
                     </div>
-                    <Link href="https://discord.gg/yeWnF738pV">
-                      <a className={`btn btn-lg btn-block ${ styles.button}`}>Claim spot</a>
-                    </Link>
+                    <div className="text-center">
+                      <Link href="https://discord.gg/yeWnF738pV">
+                        <button type="button" className={`btn btn-lg ${ styles.button}`}>Claim spot</button>
+                      </Link>
+                    </div>
                   </div>
                   <div className={`${styles.editor} col`}>
                   </div>
                 </div>
-              </div>
-            </div>
         <About className={`${ styles.about }`}/>
       </div>
     )

@@ -23,10 +23,10 @@
 }
 
 .description {
-    padding-top: 80px;
+    padding-top: 50px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -35,7 +35,7 @@
 .text {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 21.5px;
+    font-size: 23px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -48,10 +48,10 @@
     font-weight: 375;
     font-size: 19px;
     color: white;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    max-width: 225px;
+    margin-bottom: 70px;
+    width: 260px;
     max-height: 45px;
+    text-align: center;
 }
 
 .editor {
