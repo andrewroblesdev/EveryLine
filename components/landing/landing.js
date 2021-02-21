@@ -18,10 +18,10 @@ export default function Landing() {
                 <div className={`row`}>
                   <div className={`col`}>
                     <div className={`${ styles.description }`}>
-                     Go viral on TechTok 
+                     Tech TikTok Workshop 
                     </div>
                     <div className={`${ styles.text }`}>
-                      Join a mastermind group with fellow tech TikTok content creators
+                      Get feedback on your TikTok videos from content creators in tech
                     </div>
                     <Link href="https://discord.gg/yeWnF738pV">
                       <a className={`btn btn-lg btn-block ${ styles.button}`}>Claim spot</a>

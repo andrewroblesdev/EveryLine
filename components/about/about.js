@@ -9,10 +9,10 @@ export default function About() {
             <div className={`row justify-content-center`}>
                 <div className={`col text-center`}>
                     <div className={`${styles.title}`}>
-                        What is EveryLine?
+                        Workshop details
                     </div>
                     <div className={`${styles.medium}`}>
-                       4 workshops over a 2 week period
+                    TikTok creators in the tech are meeting on Friday, March 12th at 8pm PST over Zoom
                     </div>
                 </div>
             </div>
@@ -22,10 +22,10 @@ export default function About() {
                     <i className={`fas fa-video fa-3x`}></i>
                     
                     <div className={`${styles.subtitle}`}>
-                        Create TikToks
+                        Create TikTok
                     </div>
                     <div className={`${styles.small}`}>
-                       Each workshop starts with recording and uploading a tech TikTok video  
+                       You will be given a video prompt and time limit to upload a TikTok  
                     </div>
                 </div>
                 <div className={`col-md-3 text-center mb-5`}>
@@ -36,7 +36,7 @@ export default function About() {
                         Get feedback
                     </div>
                     <div className={`${styles.small}`}>
-                        Watch party to learn how to maximize engagement from a tech audience
+                        Creators will be placed in breakout rooms to give and receive feedback
                     </div>
                 </div>
                 <div className={`col-md-3 text-center`}>
