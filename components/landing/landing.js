@@ -24,7 +24,7 @@ export default function Landing() {
                       Join a mastermind group with fellow TikTok tech content creators
                     </div>
                     <Link href="/demo">
-                      <a className={`btn btn-lg btn-block ${ styles.button}`}>Get started</a>
+                      <a className={`btn btn-lg btn-block ${ styles.button}`}>Claim spot</a>
                     </Link>
                   </div>
                   <div className={`${styles.editor} col`}>
