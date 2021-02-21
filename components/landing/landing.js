@@ -23,7 +23,7 @@ export default function Landing() {
                     <div className={`${ styles.text }`}>
                       Join a mastermind group with fellow tech TikTok content creators
                     </div>
-                    <Link href="/demo">
+                    <Link href="https://discord.gg/yeWnF738pV">
                       <a className={`btn btn-lg btn-block ${ styles.button}`}>Claim spot</a>
                     </Link>
                   </div>
