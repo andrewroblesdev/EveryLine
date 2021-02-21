@@ -21,7 +21,7 @@ export default function Landing() {
                      Go viral on TechTok 
                     </div>
                     <div className={`${ styles.text }`}>
-                      Join a mastermind group with fellow TikTok tech content creators
+                      Join a mastermind group with fellow tech TikTok content creators
                     </div>
                     <Link href="/demo">
                       <a className={`btn btn-lg btn-block ${ styles.button}`}>Claim spot</a>
