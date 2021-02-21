@@ -9,48 +9,49 @@ export default function About() {
             <div className={`row justify-content-center`}>
                 <div className={`col text-center`}>
                     <div className={`${styles.title}`}>
-                        Why EveryLine?
+                        What is EveryLine?
                     </div>
                     <div className={`${styles.medium}`}>
-                       Learning how to build a trading bot will equip you with these valuable skills: 
+                       4 workshops over a 2 week period
                     </div>
                 </div>
             </div>
             <div className={`${styles.spacer}`}></div>
             <div className={`row justify-content-center`}>
                 <div className={`col-md-3 text-center mb-5`}>
-                    <i className={`fab fa-python fa-3x`}></i>
+                    <i className={`fas fa-video fa-3x`}></i>
                     
                     <div className={`${styles.subtitle}`}>
-                        Learn Python
+                        Create TikToks
                     </div>
                     <div className={`${styles.small}`}>
-                       Arguably one of the most powerful languages you can learn 
+                       Each workshop starts with recording and uploading a tech TikTok video  
                     </div>
                 </div>
                 <div className={`col-md-3 text-center mb-5`}>
                     <div>
-                        <i className={`fas fa-money-bill-wave fa-3x`}></i>
+                        <i className={`fas fa-comments fa-3x`}></i>
                     </div>
                     <div className={`${styles.subtitle}`}>
-                        Trade stocks 
+                        Get feedback
                     </div>
                     <div className={`${styles.small}`}>
-                        An essential skill to building wealth is learning how to invest your money 
+                        Watch party to learn how to maximize engagement from a tech audience
                     </div>
                 </div>
                 <div className={`col-md-3 text-center`}>
                     <div>
-                        <i className={`fas fa-chart-line fa-3x`}></i>
+                        <i className={`fas fa-handshake fa-3x`}></i>
                     </div>
                     <div className={`${styles.subtitle}`}>
-                        Find trends 
+                        Build network
                     </div>
                     <div className={`${styles.small}`}>
-                        Use the Pandas and Matplotlib libraries to see into and predict the future 
+                        Establish valuable connections within the tech TikTok community
                     </div>
                 </div>
             </div>
+            <div className={`${styles.border} mb-5`}></div>
             <div className={`${styles.border} mb-5`}></div>
         </div>
     )
