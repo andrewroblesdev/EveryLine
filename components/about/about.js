@@ -18,7 +18,7 @@ export default function About() {
             </div>
             <div className={`${styles.spacer}`}></div>
             <div className={`row justify-content-center`}>
-                <div className={`col text-center mb-5`}>
+                <div className={`col text-center mb-5 ${styles.info}`}>
                     <i className={`fas fa-video fa-3x`}></i>
                     
                     <div className={`${styles.subtitle}`}>
@@ -28,7 +28,7 @@ export default function About() {
                        You will be given a video prompt and time limit to upload a TikTok  
                     </div>
                 </div>
-                <div className={`col text-center mb-5`}>
+                <div className={`col text-center mb-5 ${styles.info}`}>
                     <div>
                         <i className={`fas fa-comments fa-3x`}></i>
                     </div>
@@ -39,7 +39,7 @@ export default function About() {
                         Creators will be placed in breakout rooms to give and receive feedback
                     </div>
                 </div>
-                <div className={`col text-center`}>
+                <div className={`col text-center ${styles.info}`}>
                     <div>
                         <i className={`fas fa-handshake fa-3x`}></i>
                     </div>

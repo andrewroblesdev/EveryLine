@@ -42,4 +42,8 @@
     .small {
         font-size: 20px;
     }
+
+    .info {
+        min-width: 90%;
+    }
 }

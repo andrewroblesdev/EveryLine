@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import styles from './landing.module.css'
 
-import Editor from '../editor/editor'
 import About from '../about/about'
 
 import Link from 'next/link'
