@@ -21,7 +21,7 @@ export default function Landing() {
                       Get feedback on your TikTok videos from content creators in tech
                     </div>
                     <div className="text-center">
-                      <Link href="https://discord.gg/yeWnF738pV">
+                      <Link href="https://launchpass.com/everyline/tech-tiktok-workshop">
                         <button type="button" className={`btn btn-lg ${ styles.button}`}>Claim spot</button>
                       </Link>
                     </div>
