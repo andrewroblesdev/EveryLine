@@ -12,7 +12,7 @@ export default function About() {
                         Workshop details
                     </div>
                     <div className={`${styles.medium}`}>
-                    TikTok creators from the tech community are meeting on Friday, March 12th at 8pm PST over Zoom
+                    TikTok creators from the tech community are meeting on Sunday, February 28th at 8pm PST over Zoom
                     </div>
                 </div>
             </div>
