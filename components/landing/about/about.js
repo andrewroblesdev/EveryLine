@@ -12,20 +12,20 @@ export default function About() {
                         Workshop details
                     </div>
                     <div className={`${styles.medium}`}>
-                    TikTok creators from the tech community are meeting on Sunday, February 28th at 8pm PST over Zoom
+                    Masterclass will take place on Sunday, February 28th at 5pm PST over Zoom
                     </div>
                 </div>
             </div>
             <div className={`${styles.spacer}`}></div>
             <div className={`row justify-content-center`}>
                 <div className={`col text-center mb-5 ${styles.info}`}>
-                    <i className={`fas fa-video fa-3x`}></i>
+                    <i className={`fab fa-tiktok fa-3x`}></i>
                     
                     <div className={`${styles.subtitle}`}>
                         Create TikTok
                     </div>
                     <div className={`${styles.small}`}>
-                       You will be given a video prompt and time limit to upload a TikTok  
+                        Upload a TikTok video according to the special instructions of masterclass professor
                     </div>
                 </div>
                 <div className={`col text-center mb-5 ${styles.info}`}>
@@ -36,18 +36,18 @@ export default function About() {
                         Get feedback
                     </div>
                     <div className={`${styles.small}`}>
-                        Creators will be placed in breakout rooms to give and receive feedback
+                        Discuss your video with peers to learn the trade secrets to producing viral content 
                     </div>
                 </div>
                 <div className={`col text-center ${styles.info}`}>
                     <div>
-                        <i className={`fas fa-handshake fa-3x`}></i>
+                        <i className={`fab fa-discord fa-3x`}></i>
                     </div>
                     <div className={`${styles.subtitle}`}>
-                        Build network
+                       Keep in touch 
                     </div>
                     <div className={`${styles.small}`}>
-                        Establish valuable connections within the tech TikTok community
+                        Connect with exclusive Discord community for valuable job referrals, mentors, and friendships
                     </div>
                 </div>
             </div>
