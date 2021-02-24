@@ -21,7 +21,7 @@ export default function Landing() {
                       How to create viral Tech TikToks
                     </div>
                     <div className="text-center">
-                      <Link href="https://launchpass.com/everyline/tech-tiktok-workshop">
+                      <Link href="https://launchpass.com/everyline/tech-tok-masterclass">
                         <button type="button" className={`btn btn-lg ${ styles.button}`}><i className={`fab fa-discord mr-2`}></i>Join Discord</button>
                       </Link>
                     </div>
