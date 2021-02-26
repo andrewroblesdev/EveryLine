@@ -15,14 +15,14 @@ export default function Landing() {
                     <a>EveryLine</a>
                 </div>
                     <div className={`${ styles.description }`}>
-                     TechTok Masterclass
+                      Hire a Tech Influencer
                     </div>
                     <div className={`${ styles.text }`}>
-                      How to create viral tech TikToks
+                      Premium services from influencers in the tech community
                     </div>
                     <div className="text-center">
                       <Link href="https://launchpass.com/everyline/tech-tok-masterclass">
-                        <button type="button" className={`btn btn-lg ${ styles.button}`}>Learn more</button>
+                        <button type="button" className={`btn btn-lg ${ styles.button}`}>Sign up</button>
                       </Link>
                     </div>
                   </div>
