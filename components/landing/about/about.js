@@ -9,10 +9,10 @@ export default function About() {
             <div className={`row justify-content-center`}>
                 <div className={`col text-center`}>
                     <div className={`${styles.title}`}>
-                        Workshop details
+                       Services Available 
                     </div>
                     <div className={`${styles.medium}`}>
-                    Masterclass will take place on Sunday, February 28th at 5pm PST over Zoom
+                        Content creators each offer a unique tech service to their fans
                     </div>
                 </div>
             </div>
@@ -22,10 +22,10 @@ export default function About() {
                     <i className={`fab fa-tiktok fa-3x`}></i>
                     
                     <div className={`${styles.subtitle}`}>
-                        Create TikTok
+                        Learn Crypto with Alysia
                     </div>
                     <div className={`${styles.small}`}>
-                        Upload a TikTok video according to the special instructions of masterclass professor
+                        Private Crypto Coaching sessions for you to gain clarity and be successful on you cryptocurrency and blockchain journey
                     </div>
                 </div>
                 <div className={`col text-center mb-5 ${styles.info}`}>
@@ -33,10 +33,10 @@ export default function About() {
                         <i className={`fas fa-comments fa-3x`}></i>
                     </div>
                     <div className={`${styles.subtitle}`}>
-                        Get feedback
+                       Online Tutoring with Jae 
                     </div>
                     <div className={`${styles.small}`}>
-                        Discuss your video with peers to learn the trade secrets to producing viral content 
+                      Learn how to code from me 1 on 1  
                     </div>
                 </div>
                 <div className={`col text-center ${styles.info}`}>
@@ -44,10 +44,10 @@ export default function About() {
                         <i className={`fab fa-discord fa-3x`}></i>
                     </div>
                     <div className={`${styles.subtitle}`}>
-                       Keep in touch 
+                       Software consulting with Carmen
                     </div>
                     <div className={`${styles.small}`}>
-                        Connect with exclusive Discord community for valuable job referrals, mentors, and friendships
+                        We will work with you to bring your vision to life. Or help you refine it, if you're sill a bit unsure.
                     </div>
                 </div>
             </div>
