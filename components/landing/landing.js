@@ -15,10 +15,10 @@ export default function Landing() {
                     <a>EveryLine</a>
                 </div>
                     <div className={`${ styles.description }`}>
-                      Hire a Tech Influencer
+                      Tech Influencer Jobs
                     </div>
                     <div className={`${ styles.text }`}>
-                      Premium services from influencers in the tech community
+                      Provide tech services for your fans
                     </div>
                     <div className="text-center">
                       <Link href="https://launchpass.com/everyline/tech-tok-masterclass">
