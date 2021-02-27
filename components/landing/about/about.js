@@ -19,8 +19,7 @@ export default function About() {
             <div className={`${styles.spacer}`}></div>
             <div className={`row justify-content-center`}>
                 <div className={`col text-center mb-5 ${styles.info}`}>
-                    <i className={`fab fa-tiktok fa-3x`}></i>
-                    
+                    <img className={`${styles.profile}`} src="/images/cryptoclasses.jpeg" /> 
                     <div className={`${styles.subtitle}`}>
                         Learn Crypto with Alysia
                     </div>
@@ -30,7 +29,7 @@ export default function About() {
                 </div>
                 <div className={`col text-center mb-5 ${styles.info}`}>
                     <div>
-                        <i className={`fas fa-comments fa-3x`}></i>
+                        <img className={`${styles.profile}`} src="/images/imjaewilliams.jpeg"></img>
                     </div>
                     <div className={`${styles.subtitle}`}>
                        Online Tutoring with Jae 
@@ -41,7 +40,7 @@ export default function About() {
                 </div>
                 <div className={`col text-center ${styles.info}`}>
                     <div>
-                        <i className={`fab fa-discord fa-3x`}></i>
+                        <img className={`${styles.profile}`} src="/images/r3versal.jpeg"></img>
                     </div>
                     <div className={`${styles.subtitle}`}>
                        Software consulting with Carmen
