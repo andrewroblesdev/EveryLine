@@ -51,7 +51,6 @@ export default function About() {
                 </div>
             </div>
             <div className={`${styles.border} mb-5`}></div>
-            <div className={`${styles.border} mb-5`}></div>
         </div>
     )
 }

@@ -73,7 +73,7 @@
     }
 
     .description {
-        padding-top: 30px;
+        padding-top: 20px;
         font-size: 31px;
         font-weight: 400;
     }
@@ -83,7 +83,7 @@
         max-width: none;
         max-height: none;
         font-size: 27px;
-        margin-bottom: 130px;
+        margin-bottom: 50px;
     }
 
     .editor {
