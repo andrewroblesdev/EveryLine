@@ -43,7 +43,7 @@ export default function About() {
                         <img className={`${styles.profile}`} src="/images/r3versal.jpeg"></img>
                     </div>
                     <div className={`${styles.subtitle}`}>
-                       Software consulting with Carmen
+                      Consulting with Carmen
                     </div>
                     <div className={`${styles.small}`}>
                         We will work with you to bring your vision to life. Or help you refine it, if you're sill a bit unsure.
