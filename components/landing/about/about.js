@@ -19,7 +19,9 @@ export default function About() {
             <div className={`${styles.spacer}`}></div>
             <div className={`row justify-content-center`}>
                 <div className={`col text-center mb-5 ${styles.info}`}>
-                    <img className={`${styles.profile}`} src="/images/cryptoclasses.jpeg" /> 
+                    <a href="https://beacons.page/alysiatech">
+                        <img className={`${styles.profile}`} src="/images/cryptoclasses.jpeg" /> 
+                    </a>
                     <div className={`${styles.subtitle}`}>
                         Learn Crypto with Alysia
                     </div>
@@ -29,7 +31,9 @@ export default function About() {
                 </div>
                 <div className={`col text-center mb-5 ${styles.info}`}>
                     <div>
-                        <img className={`${styles.profile}`} src="/images/imjaewilliams.jpeg"></img>
+                        <a href="https://beacons.page/imjaewilliams">
+                            <img className={`${styles.profile}`} src="/images/imjaewilliams.jpeg"></img>
+                        </a>
                     </div>
                     <div className={`${styles.subtitle}`}>
                        Online Tutoring with Jae 
@@ -40,7 +44,9 @@ export default function About() {
                 </div>
                 <div className={`col text-center ${styles.info}`}>
                     <div>
-                        <img className={`${styles.profile}`} src="/images/r3versal.jpeg"></img>
+                        <a href="https://beacons.page/r3versal">
+                            <img className={`${styles.profile}`} src="/images/r3versal.jpeg"></img>
+                        </a>
                     </div>
                     <div className={`${styles.subtitle}`}>
                       Consulting with Carmen
