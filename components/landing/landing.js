@@ -1,8 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import styles from './landing.module.css'
 
-import About from './about/about'
-
 import Link from 'next/link'
 
 export default function Landing() {
