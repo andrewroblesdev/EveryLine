@@ -19,7 +19,7 @@ export default function Landing() {
                       Make money by providing tech services for your fans!
                     </div>
                     <div className="text-center">
-                      <Link href="https://launchpass.com/everyline/tech-tok-masterclass">
+                      <Link href="https://discord.gg/4WnxjPGQ7d">
                         <button type="button" className={`btn btn-lg ${ styles.button}`}>Sign up</button>
                       </Link>
                     </div>
