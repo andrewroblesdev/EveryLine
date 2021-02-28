@@ -9,6 +9,12 @@
 
 }
 
+.profile {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
 .header {
     margin-bottom: 75px;
 }
