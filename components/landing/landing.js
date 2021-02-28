@@ -13,10 +13,10 @@ export default function Landing() {
                     <a>EveryLine</a>
                 </div>
                     <div className={`${ styles.description }`}>
-                      Tech Influencer Services 
+                      Tech Influencer Marketplace  
                     </div>
                     <div className={`${ styles.text }`}>
-                      Make money by providing tech services for your fans!
+                      Make money by selling products and services to your fans!
                     </div>
                     <div className="text-center">
                       <Link href="https://discord.gg/4WnxjPGQ7d">
@@ -35,7 +35,7 @@ export default function Landing() {
                        Services Available 
                     </div>
                     <div className={`${styles.medium}`}>
-                        Content creators each offer a unique tech service to their fans
+                        Content creators each offer a unique product or service to their fans
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ export default function Landing() {
                         <img className={`${styles.profile}`} src="/images/cryptoclasses.jpeg" /> 
                     </a>
                     <div className={`${styles.subtitle}`}>
-                        Learn Crypto with Alysia
+                        Crypto Lessons with Alysia
                     </div>
                     <div className={`${styles.small}`}>
                         Private Crypto Coaching sessions for you to gain clarity and be successful on you cryptocurrency and blockchain journey
