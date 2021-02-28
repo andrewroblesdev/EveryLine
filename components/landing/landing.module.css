@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
 
 .landing {
@@ -64,6 +65,40 @@
     height: 100px;
 }
 
+.services {
+    font-family: 'Roboto', sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+.subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.medium {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.small {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.border {
+    height: 25px;
+}
+
+.spacer {
+    height: 50px;
+}   
+
 @media (max-width: 600px) {
     .title {
         text-align: center;
@@ -88,5 +123,23 @@
 
     .editor {
         order: -1;
+    }
+    
+    .services {
+        font-size: 40px;
+    }
+
+    .small {
+        font-size: 20px;
+    }
+
+    .info {
+        min-width: 90%;
+    }
+
+    .profile{
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
     }
 }
