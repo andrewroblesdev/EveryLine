@@ -7,10 +7,6 @@ export default function Home() {
   return (
     <div>
       <Landing />
-      {/* <title>EveryLine</title> */}
-      {/* <Navbar /> */}
-      {/* <Header /> */}
-      {/* <About /> */}
     </div>
   )
 }
